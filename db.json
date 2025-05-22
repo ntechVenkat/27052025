@@ -1,0 +1,34 @@
+{
+  "Users": [
+    {
+      "id": "1",
+      "name": "Siva",
+      "role": "React.JS Developer"
+    },
+    {
+      "id": "2",
+      "name": "TVS",
+      "role": "Prompt Engineer"
+    },
+    {
+      "id": "3",
+      "name": "AG",
+      "role": "Network Manager"
+    },
+    {
+      "id": "4",
+      "name": "Sai",
+      "role": "Network Developer"
+    },
+    {
+      "id": "5",
+      "name": "Bidhan",
+      "role": "Network Engineer"
+    },
+    {
+      "name": "Naveen",
+      "role": "Senior React.JS Developer",
+      "id": "9b2c"
+    }
+  ]
+}
