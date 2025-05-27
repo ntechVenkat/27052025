@@ -11,6 +11,7 @@ const Form = (props) => {
 
   return (
     <div>
+      <h1>Filling Form Details</h1>
       <form>
         <div>
           <label htmlFor="userName">User Name</label>
@@ -59,7 +60,7 @@ const Form = (props) => {
           onClick={(e) => {
             e.preventDefault();
             setSubmitted(true);
-            if (!!userData.name) props.add(userData);
+            if (!!userData.name && !!userData.role) props.add(userData);
           }}
         >
           Send

@@ -60,22 +60,27 @@ const App = () => {
   return (
     <div>
       <center>
-        <div className="container d-flex flex-row justify-content-center mt-2">
-          <h2 className="col-8">
-            App Users Data through Redux in Table by using API
-          </h2>
-          <button
-            className="btn btn-primary col-2"
-            onClick={() => {
-              setForm(true);
-              setFormData(formData);
-            }}
-          >
-            Add
-          </button>
-        </div>
-        {form && <Form cancel={cancelForm} formData={formData} add={addUser} />}
-        <Table users={users} delete={deleteUser} edit={editUser} />
+        {form ? (
+          <Form cancel={cancelForm} formData={formData} add={addUser} />
+        ) : (
+          <>
+            <div className="container d-flex flex-row justify-content-center mt-2">
+              <h2 className="col-8">
+                App Users Data in Table through Redux by using API
+              </h2>
+              <button
+                className="btn btn-primary col-2"
+                onClick={() => {
+                  setForm(true);
+                  setFormData(formData);
+                }}
+              >
+                Add
+              </button>
+            </div>
+            <Table users={users} delete={deleteUser} edit={editUser} />
+          </>
+        )}
       </center>
     </div>
   );
